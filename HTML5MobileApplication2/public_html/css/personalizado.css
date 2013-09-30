@@ -1,0 +1,13 @@
+/* 
+    Document   : personalizado
+    Created on : Sep 17, 2013, 8:25:50 PM
+    Author     : camilo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+ .ui-footer
+            {
+                background: #2489ce;
+                color: #0000ff;
+            }

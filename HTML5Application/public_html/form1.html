@@ -1,0 +1,75 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="js/libs/jquery-1.9.0/jquery.min.js" type="text/javascript" ></script>
+        <script src="js/libs/jquery-validate-1.10.0/jquery.validate.min.js" type="text/javascript"></script>
+        <style type="text/css">
+            #form1 label.error {
+            color:red;
+            }
+            #form1 input.error {
+            border:1px solid red;
+            }
+            
+             div.error {
+            color:red;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="errores" class="error">
+            
+        </div>
+        <form action="prueba/w" id="form1">
+            <label for="nombre"> Nombre: </label>
+            <input id="nombre" name="nombre" type="text" placeholder="Ej. Camilo" />
+             <input id="numero1" name="numero1" type="text" placeholder="0" />
+            <br>
+            <input type="submit" value="Aceptar" />
+        </form>
+                <script type="text/javascript">
+             $("#form1").validate(
+             {        
+              rules: {
+                    nombre: {
+                 required: true
+                    },
+                    numero1:
+                    {
+                      required: true,
+                      number: true
+                    }        
+                    
+              },
+              messages: {
+                  nombre:
+                  {
+                    required: "Campo obligatorio*"
+                  }, 
+                   numero1:
+                    {
+                      required: "Campo obligatorio*",
+                      number: "Introduzca un número"
+                    }    
+              },
+             
+              }   
+             
+            );
+    
+        </script>
+         
+       
+    </body>
+
+    
+</html>
+
+    

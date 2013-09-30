@@ -1,0 +1,62 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/libs/jquery-1.9.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/libs/jquery-validate-1.10.0/jquery.validate.min.js"></script>
+        <style>
+            input.error
+            {
+                background-color: #FFE4E4;
+            }
+            label.error
+            {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <form id="form2" action="ddd">
+            <div id="messageBox">
+            </div>
+            <label for="nombre">nombre</label>
+            <input type="text" id="nombre" name="nombre" title="requerido">
+        <br>
+        <input type="submit" value="aceptar">
+        </form>
+     <script>
+        $("#form2").validate(
+           {
+       errorLabelContainer: "#messageBox",
+  wrapper: "li",
+              rules:
+              {
+                  nombre:
+                  {
+                      required: true,
+                      email: true
+                  }
+              },
+              messages:
+                {
+                    nombre:
+                  {
+                      required: "requerido",
+                      email: "mail"
+                  }
+                }
+     
+              
+       
+           }    
+        
+        );
+    </script>    
+    </body>
+   
+</html>

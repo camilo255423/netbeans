@@ -1,0 +1,81 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=0" />
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+    img.fullscreen {
+        max-height: 100%;
+        max-width: 100%;
+    }       
+</style>
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" type="text/css" />
+        <script src="js/libs/modernizr-2.6.2/modernizr.min.js" type="text/javascript"></script>
+        <script src="js/libs/jquery-1.9.0/jquery.min.js" type="text/javascript" ></script>
+        <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+        
+    </head>
+    <body>
+        <div data-role="page" id="photos">
+        <div id="header" data-role="header">
+            <h1> fotos </h1>
+            <article data-role="content">
+                <ul data-role="listview">
+                    <li>
+                        <a href="#doberman">
+                            <h1> Doberman </h1>
+                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRT4zOhw6SIGsnLaqC8XG3RQTwx1iEJKT98YoiDDYgCKr2dGWhrjw" alt="Doberman" />
+                        </a>
+                    </li>
+                     <li>
+                        <a href="#labrador">
+                            <h1> Labrador </h1>
+                            <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGyaC9rcappTgIa5uO5t1V2ctOP4XZheJEnRhkimUyBEbmb6lz" alt="Labrador" />
+                        </a>
+                    </li>
+                     <li>
+                        <a href="#cocker">
+                            <h1> Cocker </h1>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3EAraMJ_r2w622OaZEj_Whhk1ee4vlSpZD_4xXlFXeIUFS1Pa" alt="Cocker" />
+                        </a>
+                    </li>
+                </ul>
+            </article>
+            </div>
+
+                <footer data-role="footer">
+        <nav data-role="navbar">
+            <ul>
+                <li><a href="#" data-icon="home">Home</a></li>
+                <li><a href="#" data-icon="grid">fotos</a></li>
+                <li><a href="#" data-icon="info">info</a></li>
+            </ul>
+            
+        </nav>
+    </footer>
+        </div>
+                     <div data-role="page" id="doberman">
+    <header data-role="header">
+        <h1>Min Pin</h1>
+        <a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a>
+    </header>
+ <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRT4zOhw6SIGsnLaqC8XG3RQTwx1iEJKT98YoiDDYgCKr2dGWhrjw" alt="Doberman" />
+</div><!-- Page Dog -->
+
+<div data-role="page" id="cocker">
+    <header data-role="header">
+        <h1>Gummy Bears</h1>
+        <a href="#photos" data-icon="grid" data-iconpos="notext">Photos</a>
+    </header>
+<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQGyaC9rcappTgIa5uO5t1V2ctOP4XZheJEnRhkimUyBEbmb6lz" alt="Labrador" />
+                        
+</div><!-- Page Gummy Bears --> 
+    </body>
+
+</html>
